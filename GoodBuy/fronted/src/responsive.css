@@ -1,0 +1,299 @@
+@media only screen and (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+
+    /* ================ HEADER ================= */
+    #header {
+        padding: 2rem 2rem;
+    }
+
+    #header .search_box {
+        display: none;
+    }
+
+    #header .mid_menu {
+        display: none;
+    }
+
+    .mobile_menu_container nav {
+        width: 100%;
+    }
+
+    .menu_icon {
+        display: inline-block;
+    }
+
+    /* ==================== BANNER ================== */
+    #banner {
+        height: 92vh;
+        width: 100%;
+    }
+
+    #banner h1 {
+        font-size: 3rem;
+    }
+
+    .banner_search_box {
+        width: 370px;
+    }
+
+
+    /* ============= FOOTER ================= */
+    #footer {
+        padding: 2rem 3rem;
+    }
+
+    #footer .left {
+        display: none;
+    }
+
+    #footer .right h2 {
+        margin-bottom: .2rem;
+    }
+
+    /* ============== ABOUT =============== */
+    #about {
+        padding: 2rem 3rem;
+        width: 100%;
+    }
+
+
+    .about_cards {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about_cards .card {
+        width: 100%;
+    }
+
+
+    /* ============== CONTACT ================= */
+    #contact {
+        padding: 2rem 3rem;
+    }
+
+    .contact_cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact_cards .card {
+        width: 100%;
+    }
+
+    .contact_cards .card p {
+        text-align: left;
+    }
+
+
+    /* ===================== FORM ============== */
+    .form_container {
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding: 2rem;
+    }
+
+    .form_container .form_content {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* .form_container .form_content p {
+        text-align: start;
+        padding: 0 1rem;
+    } */
+
+    form {
+        width: 100%;
+        height: fit-content;
+        padding: 2rem;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    form p {
+        text-align: left;
+        font-size: 1.65rem;
+    }
+
+
+    /* ===================== SHOP ============== */
+    #shop {
+        padding: 3rem;
+        display: block;
+    }
+
+    .filter_container {
+        display: none;
+    }
+
+    .products_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mobile_filter {
+        display: flex;
+    }
+
+
+    /* ================== SINGLE PRODUCT ============= */
+    .single_product_container {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .product_content {
+        width: 100%;
+    }
+
+    .single_product_container img {
+        width: 100%;
+        object-fit: contain;
+        height: 400px;
+    }
+
+    /* ======================= CART ================= */
+    #cart {
+        padding: 2rem;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table {
+        text-align: right;
+        background-color: transparent !important;
+    }
+
+    table tr,
+    table td,
+    table th {
+        display: block;
+        text-align: right;
+        padding-right: 1rem;
+    }
+
+    table tr {
+        border-bottom: 2px solid #fb5607;
+        background-color: #fce6dd;
+        margin-top: 2rem;
+        border-radius: .3rem;
+        width: 100%;
+    }
+
+
+    table td {
+        position: relative;
+    }
+
+
+    .quantity {
+        justify-content: right;
+    }
+
+    table td::before {
+        position: absolute;
+        content: attr(aria-label);
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1rem;
+        font-weight: 600;
+    }
+
+    .chekout_container {
+        width: 100%;
+        float: none;
+    }
+
+
+    /* ================ SEARCH ============== */
+    #search_page {
+        padding: 2rem;
+    }
+
+    .top_product_container {
+        padding: 2rem;
+    }
+
+    .newsletter p {
+        text-align: center;
+    }
+
+    .newsletter div {
+        width: 380px;
+    }
+
+
+    /* ================ USER ORDERS ================ */
+    .user_dashboard_container {
+        flex-direction: column;
+    }
+
+    .user_menu {
+        width: 100%;
+    }
+
+    .user_actions {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .user_orders_container {
+        width: 100%;
+    }
+
+
+    /* ============== UPDATE PROFILE ============== */
+    .update_profile_container {
+        width: 100%;
+    }
+
+
+
+
+
+    /* ====================== ADMIN PANEL =================== */
+    .sidebar {
+        display: none;
+        width: 0px;
+    }
+
+    .admin_toogle {
+        display: block;
+    }
+
+    .admin_toogle_icon {
+        display: inline-block;
+    }
+
+    .showAdminMenu {
+        display: inline-block;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        height: calc(100vh - 7rem);
+        z-index: 990;
+        width: 200px;
+        transition: all .4s ease-in-out;
+    }
+
+    .widget_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .chart_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .add_product_container form input {
+        width: 100%;
+    }
+}
